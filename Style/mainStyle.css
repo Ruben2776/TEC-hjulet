@@ -1,0 +1,18 @@
+#left-menu{
+    line-height:30px;
+    background-color:#eeeeee;
+    height:auto;
+    width:200px;
+    float:left;
+    padding:5px; 
+}
+#main-text{
+    background-color:#FF6666;
+    width:550px;
+    float:left;
+    padding:10px;
+}
+#whole-page{
+    margin:auto;
+    width:50%;
+}

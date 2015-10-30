@@ -1,0 +1,465 @@
+html{ background-color:#F1F1F1; font-size: 18px; font-family: 'PT Sans', sans-serif; }
+input { font-family: inherit; font-size: inherit;}
+div, a {
+	/*position:absolute;*/
+	top:0px;
+	left:0px;
+	margin:0px;
+	padding:0px;
+	border:none;
+	line-height: inherit; 	
+}
+ul {
+   /* list-style-type: none;*/
+}
+label {
+	display:inline;
+	font-weight: normal;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+a:link {text-decoration: none;color: #000;}
+a:visited {text-decoration: none;color: #000;}
+a:hover {text-decoration: none;color: #000;}
+a:active {text-decoration: none;color: #000;}
+
+
+html #header {
+	height:50px;
+}
+html #header .section {
+	height:100px;
+}
+html #header .section .region div h2,
+html #header .section #name-and-slogan {
+	display: none;
+}
+html #header .section #logo {
+	position:absolute;
+	left:0px;
+}
+html #header .section .form-item-name ,
+html #header .section .form-item-pass {
+	position:absolute;
+	width:235px;
+	top:0px;
+	left:auto;
+	right:60px;
+	font-size:10px;
+}
+html #header .section .form-item-name {
+	right:220px;
+}
+html #skip-link,
+html #header .section  .first,
+html #header .section  .last { 
+	display:none;
+}
+html #header .section .form-actions {
+	position:absolute;
+	width:auto;
+	top:0px;
+	left:auto;
+	right:6px;
+	font-size:10px;
+
+}
+html #header .section .form-item {
+width:160px;
+}
+html #main-wrapper .toplogo {
+	position:absolute;
+	top:-30px;
+	left:-10px;
+	display:none;
+}
+html #main-wrapper {
+	position:relative;
+	top:-60px;
+}
+html #main-wrapper #main .column .section .title {
+	text-align: center;
+}
+
+html #main-wrapper .helehjulet {
+	position:relative;
+	height:615px;
+	width:1080px;
+	margin-left: auto;
+    margin-right: auto;
+}
+html #main-wrapper .helehjulet  .vaerktoejskasselink {
+	position:absolute;
+	left:auto;
+	right:100px;
+	top:auto;
+	bottom:0px;
+	width:150px;
+	height:75px;
+	background-color:#A04276;
+	-moz-border-radius: 80px / 40px;
+	-webkit-border-radius: 80px / 40px;
+	border-radius: 80px / 40px;
+}
+html #main-wrapper .helehjulet  .vaerktoejskasselink div{
+	line-height:75px;
+	padding-left: 10px;
+}
+html #main-wrapper .helehjulet  .vaerktoejskasselink :hover{ color:#FFF; }
+html #main-wrapper .helehjulet .forsidemaaneder {
+	position:absolute;
+	font-size:26px;
+	font-weight:bold;
+}
+html #main-wrapper .helehjulet .jan {
+	left:610px;
+	top:585px;
+}
+html #main-wrapper .helehjulet .feb {
+	left:445px;
+	top:585px;
+}
+html #main-wrapper .helehjulet .marts {
+	left:255px;
+	top:500px;
+}
+html #main-wrapper .helehjulet .april {
+	left:190px;
+	top:360px;
+}
+html #main-wrapper .helehjulet .maj {
+	left:200px;
+	top:210px;
+}
+html #main-wrapper .helehjulet .juni {
+	left:290px;
+	top:50px;
+}
+html #main-wrapper .helehjulet .juli {
+	left:445px;
+	top:-20px;
+}
+html #main-wrapper .helehjulet .aug {
+	left:610px;
+	top:-20px;
+}
+html #main-wrapper .helehjulet .sep {
+	left:745px;
+	top:50px;
+}
+html #main-wrapper .helehjulet .okt {
+	left:835px;
+	top:210px;
+}
+html #main-wrapper .helehjulet .nov {
+	left:835px;
+	top:360px;
+}
+html #main-wrapper .helehjulet .dec {
+	left:750px;
+	top:500px;
+}
+
+html #main-wrapper .maindrejehjul {
+	position:relative;
+	width:600px;
+	height:600px;
+	margin-left: auto;
+    margin-right: auto;
+	z-index:1;
+	background-image: url(/sites/all/themes/skrivehjulet_theme/skrivehjul_farver.png);
+	background-repeat:no-repeat;
+	background-position: center;
+}
+
+html #main-wrapper .maindrejehjul .drejehjultekst-1g,
+html #main-wrapper .maindrejehjul .drejehjultekst-2g,
+html #main-wrapper .maindrejehjul .drejehjultekst-3g {
+	font-size:12px;
+	text-align:left;
+	vertical-align: middle;
+	position:absolute;
+	width:100px;
+	height:20px;
+	line-height: 20px; 
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	-ms-transform-origin: 0% 0%;
+	-o-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	overflow:hidden;
+}
+html #main-wrapper .maindrejehjul .drejehjultekst-1g{
+	width:80px;
+}
+html #main-wrapper .maindrejehjul .drejehjultekst-1g a:hover{ color:#A04276; }
+html #main-wrapper .maindrejehjul .tekst_1gfeb,
+html #main-wrapper .maindrejehjul .tekst_1gmarch,
+html #main-wrapper .maindrejehjul .tekst_1gapril,
+html #main-wrapper .maindrejehjul .tekst_1gmay,
+html #main-wrapper .maindrejehjul .tekst_1gjune,
+html #main-wrapper .maindrejehjul .tekst_1gjuly {
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	-o-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	text-align:right;
+	left:auto;
+}
+html #main-wrapper .maindrejehjul .tekst_1gjan {
+	top:320px;
+	left:317px;
+	transform: rotate(79deg);
+	-ms-transform: rotate(79deg); /* IE 9 */
+    -webkit-transform: rotate(79deg); /* Chrome, Safari, Opera */
+}
+html #main-wrapper .maindrejehjul .tekst_1gfeb{
+	top:307px;	
+	right:296px;
+	transform: rotate(-72deg);
+	-ms-transform: rotate(-72deg); /* IE 9 */
+    -webkit-transform: rotate(-72deg); /* Chrome, Safari, Opera */
+}
+html #main-wrapper .maindrejehjul .tekst_1gmarch {
+	top:303px;
+	right:310px;
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */	
+}
+html #main-wrapper .maindrejehjul .tekst_1gapril {
+	top:295px;
+	right:327px;
+	transform: rotate(-17deg);
+	-ms-transform: rotate(-17deg); /* IE 9 */
+    -webkit-transform: rotate(-17deg); /* Chrome, Safari, Opera */
+}
+html #main-wrapper .maindrejehjul .tekst_1gmay {
+	top:280px;
+	right:330px;
+	transform: rotate(17deg);
+	-ms-transform: rotate(17deg); /* IE 9 */
+    -webkit-transform: rotate(17deg); /* Chrome, Safari, Opera */
+}
+html #main-wrapper .maindrejehjul .tekst_1gjune {
+	top:265px;
+	right:326px;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+}
+html #main-wrapper .maindrejehjul .tekst_1gjuly {
+	top:250px;
+	right:317px;
+	transform: rotate(75deg);
+	-ms-transform: rotate(75deg); /* IE 9 */
+    -webkit-transform: rotate(75deg); /* Chrome, Safari, Opera */
+}
+html #main-wrapper .maindrejehjul .tekst_1gaug {
+	top:265px;
+	left:300px;
+	transform: rotate(-76deg);
+	-ms-transform: rotate(-76deg); /* IE 9 */
+    -webkit-transform: rotate(-76deg); /* Chrome, Safari, Opera */
+}
+html #main-wrapper .maindrejehjul .tekst_1gsep {
+	top:270px;
+	left:315px;
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+}
+html #main-wrapper .maindrejehjul .tekst_1goct {
+	top:281px;
+	left:327px;
+	transform: rotate(-12deg);
+	-ms-transform: rotate(-12deg); /* IE 9 */
+    -webkit-transform: rotate(-12deg); /* Chrome, Safari, Opera */
+}
+html #main-wrapper .maindrejehjul .tekst_1gnov {
+	top:296px;
+	left:330px;
+	transform: rotate(12deg);
+	-ms-transform: rotate(12deg); /* IE 9 */
+    -webkit-transform: rotate(12deg); /* Chrome, Safari, Opera */
+}
+html #main-wrapper .maindrejehjul .tekst_1gdec {
+	top:310px;
+	left:328px;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+}
+
+html #main-wrapper .maindrejehjul .drejehjultekst-2g {
+	text-align:center;
+	overflow:hidden;
+}
+html #main-wrapper .maindrejehjul .drejehjultekst-2g a:hover{ color:#A04276; }
+html #main-wrapper .maindrejehjul .tekst_2gjan0, 
+html #main-wrapper .maindrejehjul .tekst_2gjan1 { top:432px; left:290px; }
+html #main-wrapper .maindrejehjul .tekst_2gjan1 { top:452px; }
+html #main-wrapper .maindrejehjul .tekst_2gfeb0,
+html #main-wrapper .maindrejehjul .tekst_2gfeb1 { top:432px; left:210px; }
+html #main-wrapper .maindrejehjul .tekst_2gfeb1 { top: 452px; }
+html #main-wrapper .maindrejehjul .tekst_2gmarch0,
+html #main-wrapper .maindrejehjul .tekst_2gmarch1 { top:388px; left:143px; }
+html #main-wrapper .maindrejehjul .tekst_2gmarch1 { top:408px; }
+html #main-wrapper .maindrejehjul .tekst_2gapril0,
+html #main-wrapper .maindrejehjul .tekst_2gapril1 { top:325px; left:100px; }
+html #main-wrapper .maindrejehjul .tekst_2gapril1 { top:345px; }
+html #main-wrapper .maindrejehjul .tekst_2gmay0,
+html #main-wrapper .maindrejehjul .tekst_2gmay1 { top:240px; left:100px; }
+html #main-wrapper .maindrejehjul .tekst_2gmay1 { top:260px }
+html #main-wrapper .maindrejehjul .tekst_2gjune0,
+html #main-wrapper .maindrejehjul .tekst_2gjune1 { top:173px; left:143px; }
+html #main-wrapper .maindrejehjul .tekst_2gjune1 { top:193px; }
+html #main-wrapper .maindrejehjul .tekst_2gjuly0,
+html #main-wrapper .maindrejehjul .tekst_2gjuly1 { top:130px; left:210px; }
+html #main-wrapper .maindrejehjul .tekst_2gjuly1 { top:150px; }
+html #main-wrapper .maindrejehjul .tekst_2gaug0,
+html #main-wrapper .maindrejehjul .tekst_2gaug1 { top:130px; left:290px; }
+html #main-wrapper .maindrejehjul .tekst_2gaug1 { top:150px; }
+html #main-wrapper .maindrejehjul .tekst_2gsep0,
+html #main-wrapper .maindrejehjul .tekst_2gsep1 { top:173px; left:360px; }
+html #main-wrapper .maindrejehjul .tekst_2gsep1 { top:193px; }
+html #main-wrapper .maindrejehjul .tekst_2goct0,
+html #main-wrapper .maindrejehjul .tekst_2goct1 { top:240px; left:390px; }
+html #main-wrapper .maindrejehjul .tekst_2goct1 { top:260px; }
+html #main-wrapper .maindrejehjul .tekst_2gnov0,
+html #main-wrapper .maindrejehjul .tekst_2gnov1 { top:325px; left:390px; }
+html #main-wrapper .maindrejehjul .tekst_2gnov1 { top:345px; }
+html #main-wrapper .maindrejehjul .tekst_2gdec0,
+html #main-wrapper .maindrejehjul .tekst_2gdec1 { top:388px; left:360px; }
+html #main-wrapper .maindrejehjul .tekst_2gdec1 { top:408px; }
+
+
+html #main-wrapper .maindrejehjul .drejehjultekst-3g {
+	text-align:center;
+	width:120px;
+	height:20px;
+	overflow:hidden;
+	color:#FFF;
+}
+html #main-wrapper .maindrejehjul .drejehjultekst-3g  a { color:#FFF; }
+html #main-wrapper .maindrejehjul .drejehjultekst-3g  a:hover { color:#000; }
+html #main-wrapper .maindrejehjul .tekst_3gjan0,
+html #main-wrapper .maindrejehjul .tekst_3gjan1 { top:515px; left:305px; }
+html #main-wrapper .maindrejehjul .tekst_3gjan1 { top:535px; }
+html #main-wrapper .maindrejehjul .tekst_3gfeb0,
+html #main-wrapper .maindrejehjul .tekst_3gfeb1 { top:515px; left:176px; }
+html #main-wrapper .maindrejehjul .tekst_3gfeb1 { top:535px; }
+html #main-wrapper .maindrejehjul .tekst_3gmarch0,
+html #main-wrapper .maindrejehjul .tekst_3gmarch1 { top:446px; left:60px; }
+html #main-wrapper .maindrejehjul .tekst_3gmarch1 { top:466px; left:68px; }
+html #main-wrapper .maindrejehjul .tekst_3gapril0,
+html #main-wrapper .maindrejehjul .tekst_3gapril1 { top:340px; left:0px; }
+html #main-wrapper .maindrejehjul .tekst_3gapril1 { top:360px; }
+html #main-wrapper .maindrejehjul .tekst_3gmay0,
+html #main-wrapper .maindrejehjul .tekst_3gmay1 { top:225px; left:0px; }
+html #main-wrapper .maindrejehjul .tekst_3gmay1 { top:245px; }
+html #main-wrapper .maindrejehjul .tekst_3gjune0,
+html #main-wrapper .maindrejehjul .tekst_3gjune1 { top:115px; left:68px; }
+html #main-wrapper .maindrejehjul .tekst_3gjune1 { top:135px; left:60px; }
+html #main-wrapper .maindrejehjul .tekst_3gjuly0,
+html #main-wrapper .maindrejehjul .tekst_3gjuly1 { top:55px; left:176px; }
+html #main-wrapper .maindrejehjul .tekst_3gjuly1 { top:75px; }
+html #main-wrapper .maindrejehjul .tekst_3gaug0,
+html #main-wrapper .maindrejehjul .tekst_3gaug1 { top:55px; left:305px; }
+html #main-wrapper .maindrejehjul .tekst_3gaug1 { top:75px; }
+html #main-wrapper .maindrejehjul .tekst_3gsep0,
+html #main-wrapper .maindrejehjul .tekst_3gsep1 { top:115px; left:410px; }
+html #main-wrapper .maindrejehjul .tekst_3gsep1 { top:135px; left:418px; }
+html #main-wrapper .maindrejehjul .tekst_3goct0,
+html #main-wrapper .maindrejehjul .tekst_3goct1 { top:225px; left:475px; }
+html #main-wrapper .maindrejehjul .tekst_3goct1 { top:245px; }
+html #main-wrapper .maindrejehjul .tekst_3gnov0,
+html #main-wrapper .maindrejehjul .tekst_3gnov1 { top:340px; left:475px; }
+html #main-wrapper .maindrejehjul .tekst_3gnov1 { top:360px; }
+html #main-wrapper .maindrejehjul .tekst_3gdec0,
+html #main-wrapper .maindrejehjul .tekst_3gdec1 { top:446px; left:418px; }
+html #main-wrapper .maindrejehjul .tekst_3gdec1 { top:466px; left:410px; }
+
+html #navigation {
+display: none;
+}
+html #breadcrumb {
+	display: none;
+	position:relative;
+	top:605px;
+}
+
+.node-type-article #main-wrapper .content .field-name-body {
+	width:700px;
+	float:right;
+	top:-10px;
+}
+.node-type-article #main-wrapper .content .field-name-field-toolbox-label {
+	position:relative;
+	left:0px;
+	overflow:hidden;
+	height:35px;
+	font-weight: bold;
+	width:260px;
+	margin-top:5px;
+	padding-left:5px;
+	border-radius: 5px;
+	background-color:#A04276;
+	line-height:35px;
+}
+.node-type-vaerktoejskasse #main-wrapper .sidebar .section  .region-sidebar-first,
+.node-type-article #main-wrapper .content .field-name-field-toolbox {
+	position:relative;
+	width:340px;
+	left:0px;
+	overflow:hidden;
+}
+.node-type-vaerktoejskasseoversigt  #main-wrapper .content .content .field-label,
+.node-type-article #main-wrapper .content .field-name-field-toolbox-label .field-label,
+.node-type-article #main-wrapper .content .field-name-field-toolbox .field-label{
+	display:none;
+}
+.node-type-vaerktoejskasse #main-wrapper .sidebar .section  .region-sidebar-first  .views-row,
+.node-type-vaerktoejskasseoversigt  #main-wrapper .content .content .field-name-field-toolbox-content .field-item,
+.node-type-article #main-wrapper .content .field-name-field-toolbox .field-item {
+	width:260px;
+	height:22px;
+	margin-top:5px;
+	padding-left:5px;
+	border-radius: 5px;
+	background-color:#A04276;
+}
+.node-type-vaerktoejskasse #main-wrapper .sidebar .section  .region-sidebar-first  .views-row a:hover,
+.node-type-vaerktoejskasseoversigt  #main-wrapper .content .content .field-name-field-toolbox-content .field-item  a:hover,
+.node-type-article #main-wrapper .content .field-name-field-toolbox-label a:hover,
+.node-type-article #main-wrapper .content .field-name-field-toolbox .field-item a:hover {
+	color:#F1F1F1;
+}
+.node-type-vaerktoejskasseoversigt  #main-wrapper .content,
+.node-type-vaerktoejskasse #main-wrapper .content,
+.node-type-article #main-wrapper .content {
+    margin-left: auto;
+    margin-right: auto;
+	position:relative;
+	width:1080px;
+}
+.node-type-vaerktoejskasseoversigt  #main-wrapper .content .content .field-name-field-toolbox-content {
+	padding-top:0px;
+}
+.node-type-vaerktoejskasse #main-wrapper #content .node-vaerktoejskasse{
+	width:700px;
+	position:relative;
+	left:auto;
+	right:auto;
+	float:right;
+}
+.node-type-vaerktoejskasse #main-wrapper #content .node-vaerktoejskasse .content {
+	width:inherit;
+}
+.node-type-vaerktoejskasse #main-wrapper .sidebar .section  .region-sidebar-first {
+	float:right;
+	width:380px;
+}
