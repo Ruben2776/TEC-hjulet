@@ -1,0 +1,139 @@
+/**
+ * Circular menu v2
+ */
+* { margin: 0; padding: 0; }
+html { font: 100%/1.3 Century Gothic, Verdana, sans-serif; }
+body { overflow: hidden; min-width: 20em; }
+.menuopt { display: none; }
+.circle, .circle:before, .circle:after { border-radius: 50%; }
+nav {
+	margin: 5em auto;
+	min-width: 16em; width: 72%; max-width: 40em;
+}
+nav ul {
+	position: relative;
+	padding: 50%;
+	max-width: 0; max-height: 0;
+	box-shadow: 0 0 .5em rgba(0,0,0,.5);
+	list-style: none;
+	background: white;
+}
+nav li {
+	position: absolute;
+	transition: 2s;
+}
+.slice {
+	overflow: hidden;
+	position: absolute;
+	top: 0; left: 0;
+	width: 50%; height: 50%;
+	transform-origin: 100% 100%;
+}
+.unsel {
+	top: 34%; left: 34%;
+	width: 32%; height: 32%;
+	box-shadow: 0 0 .75em;
+	background-image: url(https://praktikservice.dk/sites/all/modules/praktikservice/layout/images/schools/logos/small/tec.png);}
+.EUX { transform: skewX(50deg); }
+.GF1 { transform: rotate(30deg) skewX(50deg); }
+.GF2 { transform: rotate(60deg) skewX(50deg); }
+.HF { transform: rotate(90deg) skewX(50deg); }
+.AMU { transform: rotate(120deg) skewX(50deg); }
+.SPS { transform: rotate(150deg) skewX(50deg); }
+.NfL { transform: rotate(180deg) skewX(50deg); }
+.Laereplads { transform: rotate(210deg) skewX(50deg); }
+.Apps { transform: rotate(240deg) skewX(50deg); }
+.CDord { transform: rotate(270deg) skewX(50deg); }
+.Praktikcenter { transform: rotate(300deg) skewX(50deg); }
+.klasse10 { transform: rotate(330deg) skewX(50deg); }
+.magnifiable { height: 100%; }
+nav label { cursor: pointer; }
+.slice label {
+	display: block;
+	width: 200%; height: 200%;
+	transform: skew(-50deg) rotate(-70deg);
+	box-shadow: 0 0 .1em black;
+	opacity: .5;
+	color: transparent;
+	font-size: .8em;
+	line-height: 1.9;
+	text-align: center;
+	text-decoration: none;
+	transition: 1s;
+}
+.slice label:before {
+	position: absolute;
+	top: 10%; left: 10%;
+	width: 80%; height: 80%;
+	border-radius: 50%;
+	box-shadow: 0 0 1em rgba(0,0,0,.5);
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: 35% 35%;
+	content: '';
+}
+.slice label:hover { opacity: 1; }
+.dark label:hover { color: white; }
+.light label:hover { color: black; }
+.unsel label {
+	display: block;
+	height: 100%;
+	background: radial-gradient(rgba(0,0,0,.5), transparent 50%);
+}
+.EUX label, .oEUX:checked ~ nav .unsel { background: #f4f5fa; }
+.GF1 label, .oGF1:checked ~ nav .unsel { background: #5DE2F6; }
+.GF2 label, .oGF2:checked ~ nav .unsel { background: #655EEF; }
+.HF label, .oHF:checked ~ nav .unsel { background: #ffeb98; }
+.AMU label, .oAMU:checked ~ nav .unsel { background: #aaff80; }
+.SPS label, .oSPS:checked ~ nav .unsel { background: #ffb038; }
+.NfL label, .oNfL:checked ~ nav .unsel { background: #d3a573; }
+.Laereplads label, .oLaereplads:checked ~ nav .unsel { background: #d9e260; }
+.Apps label, .oApps:checked ~ nav .unsel { background: #833a68; }
+.CDord label, .oCDord:checked ~ nav .unsel { background: #b1001d; }
+.Praktikcenter label, .oPraktikcenter:checked ~ nav .unsel { background: #ec0404; }
+.klasse10 label, .o10klasse:checked ~ nav .unsel { background: #ef6982; }
+.EUX label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Cocos_nucifera00.jpg/320px-Cocos_nucifera00.jpg); }
+.GF1 label:before { background-image: url(http://www.learningherbs.com/image-files/vanilla-extract-7.jpg); }
+.GF2 label:before { background-image: url(http://www.learningherbs.com/image-files/vanilla-extract-7.jpg); }
+.HF label:before { background-image: url(http://www.learningherbs.com/image-files/vanilla-extract-7.jpg); }
+.AMU label:before { background-image: url(http://vignette4.wikia.nocookie.net/disney/images/3/36/King_candy_transparent.png); }
+.SPS label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/OrangeBloss_wb.jpg/250px-OrangeBloss_wb.jpg); }
+.NfL label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/PikiWiki_Israel_7025_Amond_blossom.jpg/170px-PikiWiki_Israel_7025_Amond_blossom.jpg); }
+.Laereplads label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Table_grapes_on_white.jpg/220px-Table_grapes_on_white.jpg); }
+.Apps label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Ripe%2C_ripening%2C_and_green_blackberries.jpg/220px-Ripe%2C_ripening%2C_and_green_blackberries.jpg); }
+.CDord label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cherry_Stella444.jpg/220px-Cherry_Stella444.jpg); }
+.Praktikcenter label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/PerfectStrawberry.jpg/220px-PerfectStrawberry.jpg); }
+.klasse10 label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Raspberries05.jpg/220px-Raspberries05.jpg); }
+.slice label:hover:after { opacity: 0; }
+.oEUX:checked ~ nav .EUX { transform: skewX(50deg) scale(1.05); }
+.oGF1:checked ~ nav .GF1 { transform: rotate(30deg) skewX(50deg) scale(1.05); }
+.oGF2:checked ~ nav .GF2 { transform: rotate(60deg) skewX(50deg) scale(1.05); }
+.oHF:checked ~ nav .HF { transform: rotate(90deg) skewX(50deg) scale(1.05); }
+.oAMU:checked ~ nav .AMU { transform: rotate(120deg) skewX(50deg) scale(1.05); }
+.oSPS:checked ~ nav .SPS { transform: rotate(150deg) skewX(50deg) scale(1.05); }
+.oNfL:checked ~ nav .NfL { transform: rotate(180deg) skewX(50deg) scale(1.05); }
+.oLaereplads:checked ~ nav .Laereplads { transform: rotate(210deg) skewX(50deg) scale(1.05); }
+.oApps:checked ~ nav .Apps { transform: rotate(240deg) skewX(50deg) scale(1.05); }
+.oCDord:checked ~ nav .CDord { transform: rotate(270deg) skewX(50deg) scale(1.05); }
+.oPraktikcenter:checked ~ nav .Praktikcenter { transform: rotate(300deg) skewX(50deg) scale(1.05); }
+.o10klasse:checked ~ nav .klasse10 { transform: rotate(330deg) skewX(50deg) scale(1.05); }
+.oEUX:checked ~ nav .EUX label, 
+.oGF1:checked ~ nav .GF1 label,
+.oGF2:checked ~ nav .GF2 label,
+.oHF:checked ~ nav .HF label,
+.oAMU:checked ~ nav .AMU label, 
+.oSPS:checked ~ nav .SPS label, 
+.oNfL:checked ~ nav .NfL label, 
+.oLaereplads:checked ~ nav .Laereplads label, 
+.oApps:checked ~ nav .Apps label {
+	box-shadow: 0 0 .45em rgba(0,0,0,.5);
+	opacity: 1; color: black;
+}
+.oCDord:checked ~ nav .CDord label , 
+.oPraktikcenter:checked ~ nav .Praktikcenter label, 
+.o10klasse:checked ~ nav .klasse10 label {
+	box-shadow: 0 0 .45em rgba(0,0,0,.5);
+	opacity: 1; color: white;
+}
+@media (min-width: 25em) { .slice label { font-size: 1em; line-height: 2.3; } }
+@media (min-width: 35em) { .slice label { font-weight: 700; line-height: 2.7; } }
