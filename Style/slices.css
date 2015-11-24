@@ -33,23 +33,25 @@ nav li {
 	top: 34%; left: 34%;
 	width: 32%; height: 32%;
 	box-shadow: 0 0 .75em;
-	background: paleturquoise;
-}
-.coconut2 { transform: skewX(50deg); }
-.vanilla { transform: rotate(40deg) skewX(50deg); }
-.orange { transform: rotate(80deg) skewX(50deg); }
-.almond { transform: rotate(120deg) skewX(50deg); }
-.grape { transform: rotate(160deg) skewX(50deg); }
-.blackberry { transform: rotate(-160deg) skewX(50deg); }
-.cherry { transform: rotate(-120deg) skewX(50deg); }
-.strawberry { transform: rotate(-80deg) skewX(50deg); }
-.raspberry { transform: rotate(-40deg) skewX(50deg); }
+	background-image: url(https://praktikservice.dk/sites/all/modules/praktikservice/layout/images/schools/logos/small/tec.png);}
+.EUX { transform: skewX(60deg); }
+.GF1 { transform: rotate(30deg) skewX(60deg); }
+.GF2 { transform: rotate(60deg) skewX(60deg); }
+.HF { transform: rotate(90deg) skewX(60deg); }
+.AMU { transform: rotate(120deg) skewX(60deg); }
+.SPS { transform: rotate(150deg) skewX(60deg); }
+.NfL { transform: rotate(180deg) skewX(60deg); }
+.Laereplads { transform: rotate(210deg) skewX(60deg); }
+.Apps { transform: rotate(240deg) skewX(60deg); }
+.CDord { transform: rotate(270deg) skewX(60deg); }
+.Praktikcenter { transform: rotate(300deg) skewX(60deg); }
+.klasse10 { transform: rotate(330deg) skewX(60deg); }
 .magnifiable { height: 100%; }
 nav label { cursor: pointer; }
 .slice label {
 	display: block;
 	width: 200%; height: 200%;
-	transform: skew(-50deg) rotate(-70deg);
+	transform: skew(-60deg) rotate(-75deg);
 	box-shadow: 0 0 .1em black;
 	opacity: .5;
 	color: transparent;
@@ -57,7 +59,7 @@ nav label { cursor: pointer; }
 	line-height: 1.9;
 	text-align: center;
 	text-decoration: none;
-	transition: 1s;
+	transition: 0s;
 }
 .slice label:before {
 	position: absolute;
@@ -65,59 +67,60 @@ nav label { cursor: pointer; }
 	width: 80%; height: 80%;
 	border-radius: 50%;
 	box-shadow: 0 0 1em rgba(0,0,0,.5);
-	background-position: 50% 0;
+	background-position: 45% 0;
 	background-repeat: no-repeat;
 	background-size: 35% 35%;
 	content: '';
 }
 .slice label:hover { opacity: 1; }
-.dark label:hover { color: white; }
-.light label:hover { color: black; }
+.dark label { color: white; }
+.light label { color: black; }
 .unsel label {
 	display: block;
 	height: 100%;
-	background: radial-gradient(rgba(0,0,0,.5), transparent 50%);
+	background-image: url(https://praktikservice.dk/sites/all/modules/praktikservice/layout/images/schools/logos/small/tec.png);
 }
-.coconut2 label, .ococonut:checked ~ nav .unsel { background: #f4f5fa; }
-.vanilla label, .ovanilla:checked ~ nav .unsel { background: #ffeb98; }
-.orange label, .oorange:checked ~ nav .unsel { background: #ffb038; }
-.almond label, .oalmond:checked ~ nav .unsel { background: #d3a573; }
-.grape label, .ogrape:checked ~ nav .unsel { background: #d9e260; }
-.blackberry label, .oblackberry:checked ~ nav .unsel { background: #833a68; }
-.cherry label, .ocherry:checked ~ nav .unsel { background: #b1001d; }
-.strawberry label, .ostrawberry:checked ~ nav .unsel { background: #ec0404; }
-.raspberry label, .oraspberry:checked ~ nav .unsel { background: #ef6982; }
-.coconut2 label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Cocos_nucifera00.jpg/320px-Cocos_nucifera00.jpg); }
-.vanilla label:before { background-image: url(http://www.learningherbs.com/image-files/vanilla-extract-7.jpg); }
-.orange label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/OrangeBloss_wb.jpg/250px-OrangeBloss_wb.jpg); }
-.almond label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/PikiWiki_Israel_7025_Amond_blossom.jpg/170px-PikiWiki_Israel_7025_Amond_blossom.jpg); }
-.grape label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Table_grapes_on_white.jpg/220px-Table_grapes_on_white.jpg); }
-.blackberry label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Ripe%2C_ripening%2C_and_green_blackberries.jpg/220px-Ripe%2C_ripening%2C_and_green_blackberries.jpg); }
-.cherry label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cherry_Stella444.jpg/220px-Cherry_Stella444.jpg); }
-.strawberry label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/PerfectStrawberry.jpg/220px-PerfectStrawberry.jpg); }
-.raspberry label:before { background-image: url(http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Raspberries05.jpg/220px-Raspberries05.jpg); }
+.EUX label, .oEUX:checked ~ nav .unsel { background: #f4f5fa; }
+.GF1 label, .oGF1:checked ~ nav .unsel { background: #5DE2F6; }
+.GF2 label, .oGF2:checked ~ nav .unsel { background: #655EEF; }
+.HF label, .oHF:checked ~ nav .unsel { background: #ffeb98; }
+.AMU label, .oAMU:checked ~ nav .unsel { background: #aaff80; }
+.SPS label, .oSPS:checked ~ nav .unsel { background: #ffb038; }
+.NfL label, .oNfL:checked ~ nav .unsel { background: #d3a573; }
+.Laereplads label, .oLaereplads:checked ~ nav .unsel { background: #d9e260; }
+.Apps label, .oApps:checked ~ nav .unsel { background: #833a68; }
+.CDord label, .oCDord:checked ~ nav .unsel { background: #b1001d; }
+.Praktikcenter label, .oPraktikcenter:checked ~ nav .unsel { background: #ec0404; }
+.klasse10 label, .o10klasse:checked ~ nav .unsel { background: #ef6982; }
+
 .slice label:hover:after { opacity: 0; }
-.ococonut:checked ~ nav .coconut { transform: skewX(50deg) scale(1.05); }
-.ovanilla:checked ~ nav .vanilla { transform: rotate(40deg) skewX(50deg) scale(1.05); }
-.oorange:checked ~ nav .orange { transform: rotate(80deg) skewX(50deg) scale(1.05); }
-.oalmond:checked ~ nav .almond { transform: rotate(120deg) skewX(50deg) scale(1.05); }
-.ogrape:checked ~ nav .grape { transform: rotate(160deg) skewX(50deg) scale(1.05); }
-.oblackberry:checked ~ nav .blackberry { transform: rotate(-160deg) skewX(50deg) scale(1.05); }
-.ocherry:checked ~ nav .cherry { transform: rotate(-120deg) skewX(50deg) scale(1.05); }
-.ostrawberry:checked ~ nav .strawberry { transform: rotate(-80deg) skewX(50deg) scale(1.05); }
-.oraspberry:checked ~ nav .raspberry { transform: rotate(-40deg) skewX(50deg) scale(1.05); }
-.ococonut:checked ~ nav .coconut label, 
-.ovanilla:checked ~ nav .vanilla label, 
-.oorange:checked ~ nav .orange label, 
-.oalmond:checked ~ nav .almond label, 
-.ogrape:checked ~ nav .grape label, 
-.oraspberry:checked ~ nav .raspberry label {
+.oEUX:checked ~ nav .EUX { transform: skewX(60deg) scale(1.05); }
+.oGF1:checked ~ nav .GF1 { transform: rotate(30deg) skewX(60deg) scale(1.05); }
+.oGF2:checked ~ nav .GF2 { transform: rotate(60deg) skewX(60deg) scale(1.05); }
+.oHF:checked ~ nav .HF { transform: rotate(90deg) skewX(60deg) scale(1.05); }
+.oAMU:checked ~ nav .AMU { transform: rotate(120deg) skewX(60deg) scale(1.05); }
+.oSPS:checked ~ nav .SPS { transform: rotate(150deg) skewX(60deg) scale(1.05); }
+.oNfL:checked ~ nav .NfL { transform: rotate(180deg) skewX(60deg) scale(1.05); }
+.oLaereplads:checked ~ nav .Laereplads { transform: rotate(210deg) skewX(60deg) scale(1.05); }
+.oApps:checked ~ nav .Apps { transform: rotate(240deg) skewX(60deg) scale(1.05); }
+.oCDord:checked ~ nav .CDord { transform: rotate(270deg) skewX(60deg) scale(1.05); }
+.oPraktikcenter:checked ~ nav .Praktikcenter { transform: rotate(300deg) skewX(60deg) scale(1.05); }
+.o10klasse:checked ~ nav .klasse10 { transform: rotate(330deg) skewX(60deg) scale(1.05); }
+.oEUX:checked ~ nav .EUX label, 
+.oGF1:checked ~ nav .GF1 label,
+.oGF2:checked ~ nav .GF2 label,
+.oHF:checked ~ nav .HF label,
+.oAMU:checked ~ nav .AMU label, 
+.oSPS:checked ~ nav .SPS label, 
+.oNfL:checked ~ nav .NfL label, 
+.oLaereplads:checked ~ nav .Laereplads label, 
+.oApps:checked ~ nav .Apps label {
 	box-shadow: 0 0 .45em rgba(0,0,0,.5);
 	opacity: 1; color: black;
 }
-.oblackberry:checked ~ nav .blackberry label , 
-.ocherry:checked ~ nav .cherry label, 
-.ostrawberry:checked ~ nav .strawberry label {
+.oCDord:checked ~ nav .CDord label , 
+.oPraktikcenter:checked ~ nav .Praktikcenter label, 
+.o10klasse:checked ~ nav .klasse10 label {
 	box-shadow: 0 0 .45em rgba(0,0,0,.5);
 	opacity: 1; color: white;
 }
