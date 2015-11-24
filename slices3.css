@@ -51,7 +51,7 @@ nav label { cursor: pointer; }
 .slice label {
 	display: block;
 	width: 200%; height: 200%;
-	transform: skew(-60deg) rotate(-70deg);
+	transform: skew(-60deg) rotate(-75deg);
 	box-shadow: 0 0 .1em black;
 	opacity: .5;
 	color: transparent;
