@@ -33,7 +33,10 @@ nav li {
 	top: 34%; left: 34%;
 	width: 32%; height: 32%;
 	box-shadow: 0 0 .75em;
-	background-image: url(https://praktikservice.dk/sites/all/modules/praktikservice/layout/images/schools/logos/small/tec.png);}
+	background-image: url(http://i63.tinypic.com/c6jqd_th.png);
+	background-repeat:no-repeat;
+	background-position: center;
+}
 .EUX { transform: skewX(60deg); }
 .GF1 { transform: rotate(30deg) skewX(60deg); }
 .GF2 { transform: rotate(60deg) skewX(60deg); }
@@ -77,8 +80,10 @@ nav label { cursor: pointer; }
 .light label { color: black; }
 .unsel label {
 	display: block;
-	height: 100%;
-	background-image: url(https://praktikservice.dk/sites/all/modules/praktikservice/layout/images/schools/logos/small/tec.png);
+	width: 100%; height: 100%;
+	background-image: url(http://i63.tinypic.com/c6jqd_th.png);
+	background-repeat:no-repeat;
+	background-position: center;
 }
 .EUX label, .oEUX:checked ~ nav .unsel { background: #f4f5fa; }
 .GF1 label, .oGF1:checked ~ nav .unsel { background: #5DE2F6; }
