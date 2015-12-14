@@ -2,19 +2,28 @@
     line-height:30px;
     background-color:#eeeeee;
     height:auto;
-    width:200px;
+    width:33.33%;
     float:left;
-    padding:5px; 
+    padding:5px;
+	box-sizing: border-box;	
 }
 #main-text{
     background-color:#D6D6C2;
-    width:700px;
+    width:66.66%;
     height: auto;
     float:left;
     padding:10px;
+	box-sizing: border-box;
+}
+#new-text{
+	width:auto;
+	height:auto;
+	float:left;
+    padding:10px;
+	
 }
 #whole-page{
-    margin:auto;
-    width:50%;
-    height: auto;
+    margin: 0 auto;
+    width:calc(100% - 20px);
+    max-width: 970px;
 }
