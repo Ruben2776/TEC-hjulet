@@ -1,0 +1,522 @@
+@charset "UTF-8";
+/*------------------------------------*   RESET
+\*------------------------------------*/
+/* line 21, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+a, abbr, acronym, address, article, aside, audio, b, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 29, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/*------------------------------------*    COLORS
+\*------------------------------------*/
+/*------------------------------------*    FONTS
+\*------------------------------------*/
+/*------------------------------------*    SIZING
+\*------------------------------------*/
+/*------------------------------------*    MISC
+\*------------------------------------*/
+/* line 67, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+#main, #footer, #logo {
+  max-width: 1055px;
+  width: calc(100% - 30px);
+  min-width: 320px;
+  margin: 0 auto; }
+
+/*------------------------------------*    BODY
+\*------------------------------------*/
+/* line 77, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+body {
+  background: #ebf0f0;
+  font: 400 95%/1 "Open Sans";
+  color: #666;
+  text-rendering: optimizeLegibility; }
+
+/* line 84, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+img {
+  max-height: 100%;
+  max-width: 100%; }
+
+/* line 89, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+a {
+  color: inherit; }
+
+/*------------------------------------*    TYPOGRAPHY
+\*------------------------------------*/
+/* line 97, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+h1, h2, h3, h4, h5, h6 {
+  font: 600 210%/1.6 "Source Sans Pro"; }
+
+/* line 101, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+h2 {
+  font-size: 180%; }
+
+/* line 105, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+h3 {
+  font-size: 155%; }
+
+/* line 109, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+h4 {
+  font-size: 135%; }
+
+/* line 113, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+h5 {
+  font-size: 120%; }
+
+/* line 117, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+h6 {
+  font-size: 105%; }
+
+/* line 121, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+p {
+  line-height: 1.6; }
+
+/* line 125, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+b, strong {
+  font-weight: 700; }
+
+/* line 130, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+sup {
+  top: -0.5em; }
+
+/* line 134, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 138, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+sub, sup {
+  font-size: 68%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 145, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+em, i, cite {
+  font-style: italic; }
+
+/* line 149, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+blockquote {
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’"; }
+  /* line 154, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  blockquote p {
+    display: inline-block;
+    font-size: 93%; }
+  /* line 159, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  blockquote cite {
+    display: block; }
+    /* line 162, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+    blockquote cite :after {
+      content: "\A";
+      white-space: pre; }
+  /* line 168, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  blockquote :before, blockquote :after {
+    font-size: 4em;
+    line-height: 0.1em; }
+  /* line 173, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  blockquote :before {
+    content: open-quote;
+    margin-right: 0.25em; }
+  /* line 178, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  blockquote :after {
+    content: close-quote;
+    margin-left: 0.2em;
+    vertical-align: -0.7em; }
+
+/* line 185, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.w400 {
+  font-weight: 400; }
+
+/* line 189, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.w600 {
+  font-weight: 600; }
+
+/* line 193, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.w700 {
+  font-weight: 700; }
+
+/* line 197, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.txtCenter {
+  text-align: center; }
+
+/*------------------------------------*    LOGO
+\*------------------------------------*/
+/*------------------------------------*    MAIN
+\*------------------------------------*/
+/* line 213, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+#main {
+  margin-top: 25px; }
+  /* line 216, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
+    padding: 0 1.3%; }
+  /* line 220, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main h1 a, #main h2 a, #main h3 a, #main h4 a, #main h5 a, #main h6 a {
+    -moz-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
+    -webkit-transition: linear 0.2s;
+    transition: linear 0.2s;
+    color: inherit; }
+  /* line 225, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main h1 a:hover, #main h2 a:hover, #main h3 a:hover, #main h4 a:hover, #main h5 a:hover, #main h6 a:hover {
+    text-decoration: none; }
+  /* line 229, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main h1 {
+    border-bottom: 1px solid #E2EDF2;
+    padding: 0 1%;
+    margin: 0 1% 1%;
+    width: 96%; }
+  /* line 236, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main p {
+    padding: .2% 1.3% .7%; }
+  /* line 240, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main a {
+    color: #007acc;
+    text-decoration: inherit; }
+  /* line 245, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main a:hover {
+    color: #007acc; }
+  /* line 249, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main ol, #main ul {
+    padding: 1% 4.3%; }
+  /* line 253, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main li {
+    line-height: 1.13;
+    padding: 0.4%; }
+  /* line 258, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main article.post {
+    padding: 14px;
+    min-height: 450px; }
+  /* line 263, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main header.post-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 7px;
+    margin-bottom: 10px; }
+  /* line 269, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  #main iframe {
+    width: 100%;
+    margin: 10px 0; }
+
+/*------------------------------------*    Table
+\*------------------------------------*/
+/* line 279, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+table {
+  width: 100%;
+  font-size: .91em;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+  background: #fefefe;
+  border: 1px solid #fefefe;
+  margin: 3% 0; }
+  /* line 287, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  table tr {
+    line-height: 1.7; }
+  /* line 291, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  table td {
+    padding: 2% 0 0 2%; }
+
+/*------------------------------------*    Skrivehjul
+\*------------------------------------*/
+/* line 302, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.menuopt {
+  display: none; }
+
+/* line 303, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.circle, .circle:before, .circle:after {
+  border-radius: 50%; }
+
+/* line 304, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+nav {
+  margin: 5em auto;
+  min-width: 16em;
+  width: 72%;
+  max-width: 40em; }
+
+/* line 308, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+nav ul {
+  position: relative;
+  padding: 50%;
+  max-width: 0;
+  max-height: 0;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  list-style: none;
+  background: white; }
+
+/* line 316, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+nav li {
+  position: absolute;
+  transition: 2s; }
+
+/* line 320, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.slice {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 100% 100%; }
+
+/* line 327, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.unsel {
+  top: 34%;
+  left: 34%;
+  width: 32%;
+  height: 32%;
+  box-shadow: 0 0 0.75em;
+  background-image: url(http://i63.tinypic.com/c6jqd_th.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/* line 335, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.EUX {
+  transform: skewX(60deg); }
+
+/* line 336, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.GF1 {
+  transform: rotate(30deg) skewX(60deg); }
+
+/* line 337, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.GF2 {
+  transform: rotate(60deg) skewX(60deg); }
+
+/* line 338, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.HF {
+  transform: rotate(90deg) skewX(60deg); }
+
+/* line 339, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.AMU {
+  transform: rotate(120deg) skewX(60deg); }
+
+/* line 340, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.SPS {
+  transform: rotate(150deg) skewX(60deg); }
+
+/* line 341, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.NfL {
+  transform: rotate(180deg) skewX(60deg); }
+
+/* line 342, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.Laereplads {
+  transform: rotate(210deg) skewX(60deg); }
+
+/* line 343, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.Apps {
+  transform: rotate(240deg) skewX(60deg); }
+
+/* line 344, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.CDord {
+  transform: rotate(270deg) skewX(60deg); }
+
+/* line 345, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.Praktikcenter {
+  transform: rotate(300deg) skewX(60deg); }
+
+/* line 346, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.klasse10 {
+  transform: rotate(330deg) skewX(60deg); }
+
+/* line 347, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.magnifiable {
+  height: 100%; }
+
+/* line 348, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+nav label {
+  cursor: pointer; }
+
+/* line 349, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.slice label {
+  display: block;
+  width: 200%;
+  height: 200%;
+  transform: skew(-60deg) rotate(-75deg);
+  box-shadow: 0 0 0.1em black;
+  opacity: .5;
+  color: transparent;
+  font-size: .8em;
+  line-height: 1.9;
+  text-align: center;
+  text-decoration: none;
+  transition: 0s; }
+
+/* line 362, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.slice label:before {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  background-position: 45% 0;
+  background-repeat: no-repeat;
+  background-size: 35% 35%;
+  content: ''; }
+
+/* line 373, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.slice label:hover {
+  opacity: 1; }
+
+/* line 374, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.dark label {
+  color: white; }
+
+/* line 375, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.light label {
+  color: black; }
+
+/* line 376, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.unsel label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(http://i63.tinypic.com/c6jqd_th.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/* line 383, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.EUX label, .oEUX:checked ~ nav .unsel {
+  background: #f4f5fa; }
+
+/* line 384, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.GF1 label, .oGF1:checked ~ nav .unsel {
+  background: #5DE2F6; }
+
+/* line 385, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.GF2 label, .oGF2:checked ~ nav .unsel {
+  background: #655EEF; }
+
+/* line 386, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.HF label, .oHF:checked ~ nav .unsel {
+  background: #ffeb98; }
+
+/* line 387, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.AMU label, .oAMU:checked ~ nav .unsel {
+  background: #aaff80; }
+
+/* line 388, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.SPS label, .oSPS:checked ~ nav .unsel {
+  background: #ffb038; }
+
+/* line 389, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.NfL label, .oNfL:checked ~ nav .unsel {
+  background: #d3a573; }
+
+/* line 390, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.Laereplads label, .oLaereplads:checked ~ nav .unsel {
+  background: #d9e260; }
+
+/* line 391, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.Apps label, .oApps:checked ~ nav .unsel {
+  background: #833a68; }
+
+/* line 392, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.CDord label, .oCDord:checked ~ nav .unsel {
+  background: #b1001d; }
+
+/* line 393, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.Praktikcenter label, .oPraktikcenter:checked ~ nav .unsel {
+  background: #ec0404; }
+
+/* line 394, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.klasse10 label, .o10klasse:checked ~ nav .unsel {
+  background: #ef6982; }
+
+/* line 396, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.slice label:hover:after {
+  opacity: 0; }
+
+/* line 397, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oEUX:checked ~ nav .EUX {
+  transform: skewX(60deg) scale(1.05); }
+
+/* line 398, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oGF1:checked ~ nav .GF1 {
+  transform: rotate(30deg) skewX(60deg) scale(1.05); }
+
+/* line 399, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oGF2:checked ~ nav .GF2 {
+  transform: rotate(60deg) skewX(60deg) scale(1.05); }
+
+/* line 400, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oHF:checked ~ nav .HF {
+  transform: rotate(90deg) skewX(60deg) scale(1.05); }
+
+/* line 401, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oAMU:checked ~ nav .AMU {
+  transform: rotate(120deg) skewX(60deg) scale(1.05); }
+
+/* line 402, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oSPS:checked ~ nav .SPS {
+  transform: rotate(150deg) skewX(60deg) scale(1.05); }
+
+/* line 403, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oNfL:checked ~ nav .NfL {
+  transform: rotate(180deg) skewX(60deg) scale(1.05); }
+
+/* line 404, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oLaereplads:checked ~ nav .Laereplads {
+  transform: rotate(210deg) skewX(60deg) scale(1.05); }
+
+/* line 405, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oApps:checked ~ nav .Apps {
+  transform: rotate(240deg) skewX(60deg) scale(1.05); }
+
+/* line 406, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oCDord:checked ~ nav .CDord {
+  transform: rotate(270deg) skewX(60deg) scale(1.05); }
+
+/* line 407, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oPraktikcenter:checked ~ nav .Praktikcenter {
+  transform: rotate(300deg) skewX(60deg) scale(1.05); }
+
+/* line 408, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.o10klasse:checked ~ nav .klasse10 {
+  transform: rotate(330deg) skewX(60deg) scale(1.05); }
+
+/* line 417, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oEUX:checked ~ nav .EUX label,
+.oGF1:checked ~ nav .GF1 label,
+.oGF2:checked ~ nav .GF2 label,
+.oHF:checked ~ nav .HF label,
+.oAMU:checked ~ nav .AMU label,
+.oSPS:checked ~ nav .SPS label,
+.oNfL:checked ~ nav .NfL label,
+.oLaereplads:checked ~ nav .Laereplads label,
+.oApps:checked ~ nav .Apps label {
+  box-shadow: 0 0 0.45em rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  color: black; }
+
+/* line 423, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+.oCDord:checked ~ nav .CDord label,
+.oPraktikcenter:checked ~ nav .Praktikcenter label,
+.o10klasse:checked ~ nav .klasse10 label {
+  box-shadow: 0 0 0.45em rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  color: white; }
+
+@media (min-width: 25em) {
+  /* line 427, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  .slice label {
+    font-size: 1em;
+    line-height: 2.3; } }
+
+@media (min-width: 35em) {
+  /* line 428, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  .slice label {
+    font-weight: 700;
+    line-height: 2.7; } }
+
+/*------------------------------------*    Media Queries
+\*------------------------------------*/
+@media all and (max-width: 875px) {
+  /* line 445, C:/Users/Ruben/OneDrive/Projects/TEC-hjulet/templates/tec_hjulet/css/template.scss */
+  body {
+    font-size: 93%; } }
+
+/*# sourceMappingURL=template.css.map */

@@ -1,0 +1,454 @@
+@mixin flex(){
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+@mixin linear($sec){
+    -moz-transition: linear $sec;
+    -o-transition: linear $sec;
+    -webkit-transition: linear $sec;
+    transition: linear $sec;
+}
+
+
+
+
+/*------------------------------------*\
+   RESET
+\*------------------------------------*/
+a, abbr, acronym, address, article, aside, audio, b, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/*------------------------------------*\
+    COLORS
+\*------------------------------------*/
+$Link-color: #007acc;
+$main-outline: #33BA00;
+$dark-outline: #0A81D1;
+$light-border: 1px solid #E2EDF2;
+$fColorLight: #666;
+$light-bg: #ebf0f0;
+$light-text: #fcfafa;
+$light-hover: #F7F7F7;
+
+$alpha-dark: rgba(28,28,28,0.92);
+$shadow-color: rgba(65, 65, 65, 0.68);
+
+/*------------------------------------*\
+    FONTS
+\*------------------------------------*/
+$pharagraph: 'Open Sans';
+$header: 'Source Sans Pro';
+
+/*------------------------------------*\
+    SIZING
+\*------------------------------------*/
+$max-width: 1055px;
+$main-width: calc(100% - 30px);
+$min-width: 320px;
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+$softBorder: 1px solid #ddd;
+$softBorder2: 2px solid #ddd;
+
+#main, #footer, #logo{
+    max-width: $max-width;
+    width: $main-width;
+    min-width: $min-width;
+    margin: 0 auto;
+}
+
+/*------------------------------------*\
+    BODY
+\*------------------------------------*/
+body {
+    background: $light-bg;
+    font: 400 95%/1 $pharagraph;
+    color: $fColorLight;
+    text-rendering: optimizeLegibility;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+
+/*------------------------------------*\
+    TYPOGRAPHY
+\*------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    font: 600 210%/1.6 $header;
+}
+
+h2 {
+    font-size: 180%;
+}
+
+h3 {
+    font-size: 155%;
+}
+
+h4 {
+    font-size: 135%;
+}
+
+h5 {
+    font-size: 120%;
+}
+
+h6 {
+    font-size: 105%;
+}
+
+p {
+    line-height: 1.6;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sub, sup {
+    font-size: 68%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+em, i, cite {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+
+    p {
+        display: inline-block;
+        font-size: 93%;
+    }
+
+    cite {
+        display: block;
+
+        :after {
+            content: "\A";
+            white-space: pre;
+        }
+    }
+
+    :before, :after {
+        font-size: 4em;
+        line-height: 0.1em;
+    }
+
+    :before {
+        content: open-quote;
+        margin-right: 0.25em;
+    }
+
+    :after {
+        content: close-quote;
+        margin-left: 0.2em;
+        vertical-align: -0.7em;
+    }
+}
+
+.w400 {
+    font-weight: 400;
+}
+
+.w600 {
+    font-weight: 600;
+}
+
+.w700 {
+    font-weight: 700;
+}
+
+.txtCenter {
+    text-align: center;
+}
+
+
+/*------------------------------------*\
+    LOGO
+\*------------------------------------*/
+#logo {
+    
+}
+
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+#main {
+    margin-top: 25px;
+
+    h1, h2, h3, h4, h5, h6 {
+        padding: 0 1.3%;
+    }
+
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+        @include linear(.2s);
+        color: inherit;
+    }
+
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
+        text-decoration:none;
+    }
+    
+    h1{
+        border-bottom: $light-border;
+        padding: 0 1%;
+        margin: 0 1% 1%;
+        width: 96%;
+    }
+
+    p {
+        padding: .2% 1.3% .7%;
+    }
+
+    a {
+        color: $Link-color;
+        text-decoration: inherit;
+    }
+
+    a:hover {
+        color: $Link-color;
+    }
+
+    ol, ul {
+        padding: 1% 4.3%;
+    }
+
+    li {
+        line-height: 1.13;
+        padding: 0.4%;
+    }
+
+    article.post {
+        padding: 14px;
+        min-height: 450px;
+    }
+
+    header.post-header {
+        border-bottom: $softBorder;
+        padding-bottom: 7px;
+        margin-bottom: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+/*------------------------------------*\
+    Table
+\*------------------------------------*/
+table{
+    width: 100%;
+    font-size: .91em;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+    background: #fefefe;
+    border: 1px solid #fefefe;
+    margin: 3% 0;
+
+    tr {
+        line-height: 1.7;
+    }
+
+    td {
+        padding: 2% 0 0 2%;
+    }
+    
+}
+
+
+
+/*------------------------------------*\
+    Skrivehjul
+\*------------------------------------*/
+.menuopt { display: none; }
+.circle, .circle:before, .circle:after { border-radius: 50%; }
+nav {
+	margin: 5em auto;
+	min-width: 16em; width: 72%; max-width: 40em;
+}
+nav ul {
+	position: relative;
+	padding: 50%;
+	max-width: 0; max-height: 0;
+	box-shadow: 0 0 .5em rgba(0,0,0,.5);
+	list-style: none;
+	background: white;
+}
+nav li {
+	position: absolute;
+	transition: 2s;
+}
+.slice {
+	overflow: hidden;
+	position: absolute;
+	top: 0; left: 0;
+	width: 50%; height: 50%;
+	transform-origin: 100% 100%;
+}
+.unsel {
+	top: 34%; left: 34%;
+	width: 32%; height: 32%;
+	box-shadow: 0 0 .75em;
+	background-image: url(http://i63.tinypic.com/c6jqd_th.png);
+	background-repeat:no-repeat;
+	background-position: center;
+}
+.EUX { transform: skewX(60deg); }
+.GF1 { transform: rotate(30deg) skewX(60deg); }
+.GF2 { transform: rotate(60deg) skewX(60deg); }
+.HF { transform: rotate(90deg) skewX(60deg); }
+.AMU { transform: rotate(120deg) skewX(60deg); }
+.SPS { transform: rotate(150deg) skewX(60deg); }
+.NfL { transform: rotate(180deg) skewX(60deg); }
+.Laereplads { transform: rotate(210deg) skewX(60deg); }
+.Apps { transform: rotate(240deg) skewX(60deg); }
+.CDord { transform: rotate(270deg) skewX(60deg); }
+.Praktikcenter { transform: rotate(300deg) skewX(60deg); }
+.klasse10 { transform: rotate(330deg) skewX(60deg); }
+.magnifiable { height: 100%; }
+nav label { cursor: pointer; }
+.slice label {
+	display: block;
+	width: 200%; height: 200%;
+	transform: skew(-60deg) rotate(-75deg);
+	box-shadow: 0 0 .1em black;
+	opacity: .5;
+	color: transparent;
+	font-size: .8em;
+	line-height: 1.9;
+	text-align: center;
+	text-decoration: none;
+	transition: 0s;
+}
+.slice label:before {
+	position: absolute;
+	top: 10%; left: 10%;
+	width: 80%; height: 80%;
+	border-radius: 50%;
+	box-shadow: 0 0 1em rgba(0,0,0,.5);
+	background-position: 45% 0;
+	background-repeat: no-repeat;
+	background-size: 35% 35%;
+	content: '';
+}
+.slice label:hover { opacity: 1; }
+.dark label { color: white; }
+.light label { color: black; }
+.unsel label {
+	display: block;
+	width: 100%; height: 100%;
+	background-image: url(http://i63.tinypic.com/c6jqd_th.png);
+	background-repeat:no-repeat;
+	background-position: center;
+}
+.EUX label, .oEUX:checked ~ nav .unsel { background: #f4f5fa; }
+.GF1 label, .oGF1:checked ~ nav .unsel { background: #5DE2F6; }
+.GF2 label, .oGF2:checked ~ nav .unsel { background: #655EEF; }
+.HF label, .oHF:checked ~ nav .unsel { background: #ffeb98; }
+.AMU label, .oAMU:checked ~ nav .unsel { background: #aaff80; }
+.SPS label, .oSPS:checked ~ nav .unsel { background: #ffb038; }
+.NfL label, .oNfL:checked ~ nav .unsel { background: #d3a573; }
+.Laereplads label, .oLaereplads:checked ~ nav .unsel { background: #d9e260; }
+.Apps label, .oApps:checked ~ nav .unsel { background: #833a68; }
+.CDord label, .oCDord:checked ~ nav .unsel { background: #b1001d; }
+.Praktikcenter label, .oPraktikcenter:checked ~ nav .unsel { background: #ec0404; }
+.klasse10 label, .o10klasse:checked ~ nav .unsel { background: #ef6982; }
+
+.slice label:hover:after { opacity: 0; }
+.oEUX:checked ~ nav .EUX { transform: skewX(60deg) scale(1.05); }
+.oGF1:checked ~ nav .GF1 { transform: rotate(30deg) skewX(60deg) scale(1.05); }
+.oGF2:checked ~ nav .GF2 { transform: rotate(60deg) skewX(60deg) scale(1.05); }
+.oHF:checked ~ nav .HF { transform: rotate(90deg) skewX(60deg) scale(1.05); }
+.oAMU:checked ~ nav .AMU { transform: rotate(120deg) skewX(60deg) scale(1.05); }
+.oSPS:checked ~ nav .SPS { transform: rotate(150deg) skewX(60deg) scale(1.05); }
+.oNfL:checked ~ nav .NfL { transform: rotate(180deg) skewX(60deg) scale(1.05); }
+.oLaereplads:checked ~ nav .Laereplads { transform: rotate(210deg) skewX(60deg) scale(1.05); }
+.oApps:checked ~ nav .Apps { transform: rotate(240deg) skewX(60deg) scale(1.05); }
+.oCDord:checked ~ nav .CDord { transform: rotate(270deg) skewX(60deg) scale(1.05); }
+.oPraktikcenter:checked ~ nav .Praktikcenter { transform: rotate(300deg) skewX(60deg) scale(1.05); }
+.o10klasse:checked ~ nav .klasse10 { transform: rotate(330deg) skewX(60deg) scale(1.05); }
+.oEUX:checked ~ nav .EUX label, 
+.oGF1:checked ~ nav .GF1 label,
+.oGF2:checked ~ nav .GF2 label,
+.oHF:checked ~ nav .HF label,
+.oAMU:checked ~ nav .AMU label, 
+.oSPS:checked ~ nav .SPS label, 
+.oNfL:checked ~ nav .NfL label, 
+.oLaereplads:checked ~ nav .Laereplads label, 
+.oApps:checked ~ nav .Apps label {
+	box-shadow: 0 0 .45em rgba(0,0,0,.5);
+	opacity: 1; color: black;
+}
+.oCDord:checked ~ nav .CDord label , 
+.oPraktikcenter:checked ~ nav .Praktikcenter label, 
+.o10klasse:checked ~ nav .klasse10 label {
+	box-shadow: 0 0 .45em rgba(0,0,0,.5);
+	opacity: 1; color: white;
+}
+@media (min-width: 25em) { .slice label { font-size: 1em; line-height: 2.3; } }
+@media (min-width: 35em) { .slice label { font-weight: 700; line-height: 2.7; } }
+
+
+
+
+/*------------------------------------*\
+    Media Queries
+\*------------------------------------*/
+@media all and (max-width: 960px) {
+
+    
+}
+
+@media all and (max-width:900px) {
+}
+
+@media all and (max-width:875px) {
+    body {
+        font-size: 93%;
+    }
+}
+
+@media all and (max-width: 850px) {
+}
+
+@media all and (max-width:775px) and (min-width:1px) {
+}
